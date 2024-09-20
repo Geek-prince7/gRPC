@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package calculator;
+
+import "file.proto";
+
+service CalculatorService{
+    rpc Sum(SumRequest) returns (SumResponse);
+    rpc Diff(DiffRequest) returns (DiffResponse);
+    rpc Prod(ProdRequest) returns (ProdResponse);
+}
